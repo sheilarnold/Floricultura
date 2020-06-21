@@ -34,6 +34,44 @@ footer {
 	color: #F5FFFA;
 }
 
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #FFB6C1;
+	color: #000000;
+	font-weight: bold;
+	font-family: Didot;
+}
+
+td, th {
+	border: 1px solid #F08080;
+	padding: 8px 15px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
 .caixa {
 	position: relative;
 	width: 940px;
@@ -89,4 +127,28 @@ footer {
 	color: #FFFFFF;
 	font-size: 13px;
 	font-weight: bold;
+}
+
+.chackbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #FFB6C1;
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Didot;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #F08080;
+	transform: scale(1.2);
+	/*transform: rotate(5deg);*/
 }
