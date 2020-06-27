@@ -26,11 +26,11 @@ nav {
 		font-weight: bold;
 		font-size: 20px;
 		text-decoration: none;	
-	}
-
-	a:hover {
-		color: $cor_auxiliar;
-		text-decoration: underline;
+		
+		&:hover {
+			color: $cor_auxiliar;
+			text-decoration: underline;
+		}	
 	}
 }
 
@@ -149,12 +149,12 @@ td, th {
 	border-radius: 10px;
 	transition: 1s all;
 	cursor: pointer;
-}
 
-.enviar:hover {
-	background: $cor_auxiliar;
-	transform: scale(1.2);
-	/*transform: rotate(5deg);*/
+	&:hover {
+		background: $cor_auxiliar;
+		transform: scale(1.2);
+		/*transform: rotate(5deg);*/
+	}
 }
 
 /*css da index.html*/
@@ -194,17 +194,12 @@ p:first-line {
 	background: #FEFEFE;
 	width: 940px;
 	margin: 0 auto;
-}
 
-.principal p {
-	margin: 0 0 1em;
-}
-.principal strong {
-	font-weight: bold;
-}
+	p { margin: 0 0 1em; }
 
-.principal em {
-	font-style: italic;
+	strong { font-weight: bold; }
+
+	em { font-style: italic; }
 }
 
 .imagemben {
@@ -225,11 +220,11 @@ p:first-line {
 .mapa {
 	padding: 3em 0;
 	background: linear-gradient(#FEFEFE, $cor_auxiliar);
-}
 
-.mapa p {
-	margin: 0 0 2em;
-	text-align: center;
+	p {
+		margin: 0 0 2em;
+		text-align: center;
+	}
 }
 
 .mapa-conteudo {
@@ -260,11 +255,10 @@ p:first-line {
 
 .itens {
 	line-height: 1.5;
+
+	&:first-child { font-weight: bold; }
 }
 
-.itens:first-child {
-	font-weight: bold;
-}
 
 @media screen and (max-width: 480px) {
 	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
