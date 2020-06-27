@@ -1,0 +1,15 @@
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: $cor_padrao;
+	color: #000000;
+	font-weight: bold;
+	font-family: Didot;
+}
+
+td, th {
+	border: 1px solid $cor_auxiliar;
+	padding: 8px 15px;
+}

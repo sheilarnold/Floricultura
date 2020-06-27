@@ -1,0 +1,28 @@
+@import '../Funcionalidades/variaveis';
+
+body {
+	font-family: 'MuseoModerno', cursive;
+}
+
+header {
+	background-color: $cor_padrao;
+	padding: 10px 0;
+
+}
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagemben {
+		width: 100%;
+	}
+}

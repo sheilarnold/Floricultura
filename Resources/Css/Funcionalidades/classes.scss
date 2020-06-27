@@ -1,73 +1,4 @@
-$cor_padrao: #FFB6C1;
-$cor_auxiliar: #F08080;
-
-body {
-	font-family: 'MuseoModerno', cursive;
-}
-
-header {
-	background-color: $cor_padrao;
-	padding: 10px 0;
-}
-
-nav {
-	position: absolute;
-	top: 100px;
-	right: 0;
-
-	li {
-		display: inline;
-		margin: 0 0 0 15px;
-	}
-
-	a {
-		text-transform: uppercase;
-		color: #000000;
-		font-weight: bold;
-		font-size: 20px;
-		text-decoration: none;	
-		
-		&:hover {
-			color: $cor_auxiliar;
-			text-decoration: underline;
-		}	
-	}
-}
-
-footer {
-	text-align: center;
-	background: url("../Images/flores.jpg");
-	padding: 40px 0;
-	color: #F5FFFA;
-}
-
-form {
-	/*margin: 40px 0;*/
-	width: 940px;
-	margin: 20px auto;
-
-	label, legend {
-		display: block;
-		font-size: 20px;
-		margin: 0 0 10px;
-	}
-}
-
-table {
-	margin: 20px 0 40px;
-}
-
-thead {
-	background: $cor_padrao;
-	color: #000000;
-	font-weight: bold;
-	font-family: Didot;
-}
-
-td, th {
-	border: 1px solid $cor_auxiliar;
-	padding: 8px 15px;
-}
+@import 'variaveis.scss';
 
 .input-padrao {
 	display: block;
@@ -257,23 +188,4 @@ p:first-line {
 	line-height: 1.5;
 
 	&:first-child { font-weight: bold; }
-}
-
-
-@media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-		width: auto;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	nav {
-		position: static;
-	}
-
-	.lista-beneficios, .imagemben {
-		width: 100%;
-	}
 }
