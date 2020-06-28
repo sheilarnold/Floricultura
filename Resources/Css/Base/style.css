@@ -1,228 +1,57 @@
-@charset "UTF-8";
-.input-padrao {
-  display: block;
-  margin: 0 0 20px;
-  padding: 10px 25px;
-  width: 50%; }
-
-.caixa {
-  position: relative;
-  width: 940px;
-  margin: 0 auto; }
-
-.produtos {
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0; }
-
-.produtos li {
-  display: inline-block;
-  text-align: center;
-  width: 40%;
-  vertical-align: top;
-  margin: 0 1.5%;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  border: 3px solid lightpink;
-  border-radius: 20px; }
-
-.produtos li:hover {
-  border-color: lightcoral; }
-
-.produtos li:active {
-  border-color: #CD5C5C; }
-
-.produtos li:hover h2 {
-  font-size: 34px; }
-
-.produtos h2 {
-  font-size: 25px;
-  font-weight: bold; }
-
-.produto-preco {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 10px 0 0; }
-
-.produto-descricao {
-  font-size: 18px; }
-
-.copyright {
-  color: #FFFFFF;
-  font-size: 13px;
-  font-weight: bold; }
-
-.chackbox {
-  margin: 20px 0; }
-
-.enviar {
-  width: 40%;
-  padding: 15px 0;
-  background: lightpink;
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  font-family: Didot;
-  border: none;
-  border-radius: 10px;
-  transition: 1s all;
-  cursor: pointer; }
-  .enviar:hover {
-    background: lightcoral;
-    transform: scale(1.2);
-    /*transform: rotate(5deg);*/ }
-
-/*css da index.html*/
-.flores {
-  width: 50%;
-  margin: 15px 0;
-  border: 2px solid lightcoral;
-  border-radius: 5px; }
-
-.tituloprincipal {
-  text-align: center;
-  font-size: 2em;
-  margin: 0 0 1em;
-  clear: left; }
-
 /*
-.tituloprincipal:before {
-	content: "{ "
-}
+Error: File to import not found or unreadable: Sprite/*.png.
+        on line 1 of style.scss
 
-.tituloprincipal:after {
-	content: " }"
-}*/
-/*1ª letra do texto fica em negrito*/
-                                     /*
-.tituloprincipal:first-letter {
-	font-weight: bold;
-}*/
-/*1ª linha do parágrafo fica em itálico*/
-                                         /*
-p:first-line {
-	font-style: italic;
-}*/
-.principal {
-  padding: 3em 0;
-  background: #FEFEFE;
-  width: 940px;
-  margin: 0 auto; }
-  .principal p {
-    margin: 0 0 1em; }
-  .principal strong {
-    font-weight: bold; }
-  .principal em {
-    font-style: italic; }
+1: @import 'Sprite/*.png';//"Comando" que importa todas as imagens .png da pasta Images e cria um sprite.
+2: 
+3: @import '../Funcionalidades/classes';
+4: @import '../Layout/corpo';
+5: @import '../Layout/footer';
+6: @import '../Layout/form';
 
-.imagemben {
-  width: 50%;
-  margin: 0 20px 20px 0;
-  border: 2px solid black;
-  border-radius: 5px; }
-
-.tulipas {
-  width: 200px;
-  margin: 0 20px 20px 0;
-  border: 2px solid lightcoral;
-  border-radius: 5px;
-  float: left; }
-
-.mapa {
-  padding: 3em 0;
-  background: linear-gradient(#FEFEFE, lightcoral); }
-  .mapa p {
-    margin: 0 0 2em;
-    text-align: center; }
-
-.mapa-conteudo {
-  width: 940px;
-  margin: 0 auto; }
-
-.video {
-  width: 560px;
-  margin: 2em auto; }
-
-.conteudo-beneficios {
-  width: 640px;
-  margin: 0 auto; }
-
-.lista-beneficios {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top; }
-
-.beneficios {
-  padding: 3em 0;
-  background: lightcoral; }
-
-.itens {
-  line-height: 1.5; }
-  .itens:first-child {
-    font-weight: bold; }
-
-body {
-  font-family: 'MuseoModerno', cursive; }
-
-header {
-  background-color: lightpink;
-  padding: 10px 0; }
-
-footer {
-  text-align: center;
-  background: url("../../Images/flores.jpg");
-  padding: 40px 0;
-  color: #F5FFFA; }
-
-form {
-  /*margin: 40px 0;*/
-  width: 940px;
-  margin: 20px auto; }
-  form label, form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px; }
-
-@media screen and (max-width: 480px) {
-  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-    width: auto; }
-
-  h1 {
-    text-align: center; }
-
-  nav {
-    position: static; }
-
-  .lista-beneficios, .imagemben {
-    width: 100%; } }
-nav {
-  position: absolute;
-  top: 100px;
-  right: 0; }
-  nav li {
-    display: inline;
-    margin: 0 0 0 15px; }
-  nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none; }
-    nav a:hover {
-      color: lightcoral;
-      text-decoration: underline; }
-
-table {
-  margin: 20px 0 40px; }
-
-thead {
-  background: lightpink;
-  color: #000000;
-  font-weight: bold;
-  font-family: Didot; }
-
-td, th {
-  border: 1px solid lightcoral;
-  padding: 8px 15px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:1
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Ruby26-x64/bin/sass:23:in `load'
+C:/Ruby26-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: Sprite/*.png.\A         on line 1 of style.scss\A \A 1: @import 'Sprite/*.png';//\"Comando\" que importa todas as imagens .png da pasta Images e cria um sprite.\A 2: \A 3: @import '../Funcionalidades/classes';\A 4: @import '../Layout/corpo';\A 5: @import '../Layout/footer';\A 6: @import '../Layout/form';"; }
