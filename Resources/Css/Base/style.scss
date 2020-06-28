@@ -1,3 +1,4 @@
+//$sprite-spacing: 0.5px;//Define o espaço entre as imagens do sprite
 @import "Sprite/*.png";//"Comando" que importa todas as imagens .png da pasta Images e cria um sprite.
 
 @import '../Funcionalidades/classes';
